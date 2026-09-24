@@ -463,17 +463,38 @@ No paid API keys. No cloud inference dependency. No requirement to send transcri
 
 ## 🚧 Current Status
 
-> **Current focus:** validating the retrieval foundation before adding retrieval complexity.
+> **Current focus:** building the Phase 1 foundation and testing the local Ollama models.
 
-The next major question is deliberately practical:
+Right now, I am working on the first end-to-end version of the pipeline:
 
 ```text
-Does semantic-only retrieval find the evidence well enough?
+YouTube URL
+    ↓
+Captions and transcript
+    ↓
+Local claim extraction
+    ↓
+Europe PMC paper search
+    ↓
+Scientific paper processing
+    ↓
+Evidence retrieval
+    ↓
+Verdict and citation validation
 ```
 
-Rather than assuming that keyword search, hybrid ranking, or reranking will help, the project uses a hand-labeled evaluation set to measure what semantic retrieval actually gets right and where it fails.
+### Currently working on
 
-Only then will additional retrieval components be introduced.
+- Testing Ollama models for claim extraction
+- Testing Ollama models for evidence-based verdicts
+- Processing scientific papers while preserving sections and tables
+- Building claim-specific evidence retrieval
+- Validating citations before showing results
+- Building the basic case page
+
+### Next step
+
+Once the pipeline works reliably, I will evaluate whether semantic-only retrieval finds the right evidence well enough before adding reranking or hybrid search.
 
 ---
 
