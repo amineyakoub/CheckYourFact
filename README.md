@@ -1,6 +1,3 @@
-Absolutely — here’s a more polished, GitHub-ready README with a strong visual hierarchy, badges, centered intro, feature cards, a clean roadmap, and no installation or code sections for now. It follows the kind of project-story structure recommended by README guides: a clear purpose, visible differentiators, visuals/placeholders, and an easy-to-scan roadmap. [readme](https://readme.so/)
-
-```md
 <div align="center">
 
 # 🔎 Check Your Fact
@@ -491,4 +488,3 @@ Only then will additional retrieval components be introduced.
 ⭐ If you find this project interesting, consider starring the repository.
 
 </div>
-```
